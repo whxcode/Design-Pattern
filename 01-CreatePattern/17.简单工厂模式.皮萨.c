@@ -7,7 +7,6 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-
 typedef struct Pizza {
   void (*prepare)();
   char *name;
