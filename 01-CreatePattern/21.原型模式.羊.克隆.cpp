@@ -17,25 +17,34 @@ public:
 
 struct Sheep {
 public:
-  Sheep(string n, int a) : name(n), age(a) {}
+  Sheep(string n, int id, int a) : name(n), age(a) { this->id = new int(id); }
 
 public:
-  void print() { cout << "name:" << name << "age:" << age << endl; }
-  Sheep *clone() { return new Sheep(name, age); }
+  void print() {
+    cout << "id:" << *id << "\tname:" << name << "age:" << age << endl;
+  }
+  Sheep *clone() {
+    Sheep *s = new Sheep("", 0, 0);
+
+    *s = *this;
+    return s;
+  }
 
 public:
   string name;
   int age;
+  int *id;
 };
 
 int main() {
-  Sheep *s = new Sheep("xh", 10);
+  Sheep *s = new Sheep("xh", 10, 10);
+  Sheep *ss = s->clone();
 
-  for (int i = 0; i < 10; ++i) {
-    Sheep *ss = ss->clone();
 
-    ss->print();
-  }
+  *ss->id = 100;
+
+  s->print();
+  ss->print();
 
   return 0;
 }
