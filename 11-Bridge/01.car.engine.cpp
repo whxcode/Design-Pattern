@@ -29,6 +29,9 @@ public:
 public:
   virtual void worker() = 0;
 
+public:
+  void setEngin(Engine *engine) { this->engine = engine; }
+
 protected:
   Engine *engine;
 };
@@ -36,6 +39,7 @@ protected:
 class WBM5 : public Car {
 public:
   WBM5(Engine *e) : Car(e) {}
+
 public:
   void worker() override { engine->worker(); }
 };
@@ -49,14 +53,22 @@ public:
 };
 
 int main() {
-  Engine *e4400cc = new E4400cc;
-  Engine *me262 = new Me262;
+  E4400cc *e4400cc = new E4400cc;
+  Me262 *me262 = new Me262;
 
   WBM5 *wbw5 = new WBM5(e4400cc);
   WBM6 *wbw6 = new WBM6(me262);
 
   wbw5->worker();
   wbw6->worker();
+  wbw5->setEngin(me262);
+  cout << endl;
+  wbw5->worker();
+
+  delete e4400cc;
+  delete  me262;
+  delete wbw5;
+  delete wbw6;
 
   return 0;
 }
