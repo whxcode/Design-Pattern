@@ -92,3 +92,8 @@
 ### 8、装饰器模式
   动态的将新功能附加在对象上；在对象上扩展方面11。
 
+### 9、组合模式
+Component: 这是组合中对象声明接口、实现所有类共有的默认行为、用于访问管理 Component 子组件。
+Leaf: 叶子节点。 (Component)
+Composite: 包含叶子节点与 Composite 节点的 子节点(Component)
+
