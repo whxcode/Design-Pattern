@@ -97,3 +97,5 @@ Component: 这是组合中对象声明接口、实现所有类共有的默认行
 Leaf: 叶子节点。 (Component)
 Composite: 包含叶子节点与 Composite 节点的 子节点(Component)
 
+### 10、外观模式
+    
