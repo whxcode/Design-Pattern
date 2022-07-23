@@ -128,3 +128,6 @@ Composite: 包含叶子节点与 Composite 节点的 子节点(Component)
 ### 16、迭代器模式
   
 
+### 17、观察者模式
+
+
