@@ -1,3 +1,0 @@
-One line of test text.$'
-'Two lines of test text.$'
-'Three lines of test text.$'
