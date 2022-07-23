@@ -115,3 +115,14 @@ Composite: 包含叶子节点与 Composite 节点的 子节点(Component)
 
 ### 14、命令模式
   
+### 15、访问者模式
+  处理数据结构与数据操作的分离。在被访问的类里面，添加一个对外提供接待者的接口。
+  1、Visitor 是一个抽象的访问者，为该对象结构中的 ConcreteElement 的每一个类声明一额 visit 操作。
+  2、ConcreteVisitor 是一个具体的访问者,实现每一个由 Visitor 的声明操作。
+  3、ObjectStructure 能枚举其它的元素，可以提供一个高层接口，用来允许访问者访问的元素.
+  4、Element 定一个 accept 方法，接受一个访问者  
+  5、ConCreteElement 实现了 accept 方法。
+
+  不同的角色，访问一个类的属性，执行的操作不同。
+
+

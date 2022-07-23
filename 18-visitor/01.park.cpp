@@ -21,25 +21,30 @@ public:
   virtual void accpet(Visitor *vistor) = 0;
 };
 
+// 公元的一部分
 class StairsPark : public Park {
 public:
   void accpet(Visitor *vistor) override { vistor->vistor(this); }
 };
 
+// 公元的一部分
 class PoolPark : public Park {
 public:
   void accpet(Visitor *vistor) override { vistor->vistor(this); }
 };
 
+// 管理人员。
 class Manage : public Visitor {
 public:
   void vistor(Park *park) override { cout << "我是在视察工作的" << endl; }
 };
-
 class Cleaner : public Visitor {
 public:
   void vistor(Park *park) override { cout << "我是来打扫卫生的" << endl; }
 };
+
+
+// 管理公元的各个部分
 class Parks : public Park {
 public:
   Parks() { parks.clear(); }
