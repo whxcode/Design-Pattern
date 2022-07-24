@@ -136,3 +136,6 @@ Composite: 包含叶子节点与 Composite 节点的 子节点(Component)
   Origin: 原始对象。
   Memento: 保存原始对象的一些需要备份的数据。
   Caretaker: 管理Memento对象，在需要的时候，使用Memento对象恢复Origin对象的一些字段。
+
+### 20、状态模式。
+  随着状态变化，改变对象的行为。
