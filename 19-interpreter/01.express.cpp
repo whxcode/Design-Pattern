@@ -29,6 +29,7 @@ struct Interpreter {
 public:
   virtual void expression(Context *context) = 0;
 };
+
 struct PlusExpress : public Interpreter {
 public:
   void expression(Context *context) override {
