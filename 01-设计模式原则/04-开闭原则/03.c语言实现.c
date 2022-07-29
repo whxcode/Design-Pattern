@@ -20,7 +20,6 @@ int main() {
   worker(drawCircle);
   worker(drawCircle);
   worker(drawTriangle);
-  worker(drawStar);
 
   return 0;
 }

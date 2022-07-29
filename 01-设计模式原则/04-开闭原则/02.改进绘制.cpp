@@ -54,5 +54,14 @@ int main() {
   editor->drawShape(t);
   editor->drawShape(s);
 
+  cout  << 10 <<endl;
+
+  if (1) {
+    {
+
+    }
+
+  }
+
   return 0;
 }
