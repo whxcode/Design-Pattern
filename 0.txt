@@ -1,0 +1,8 @@
+
+-- TERMINAL --
+Error detected while processing function 827[30]..<SNR>123_callback[17]..825[1]..<SNR>123_common_sink:
+line   38:
+E216: No such group or event: fzf_swap
+"02-创建型模式/02-工厂模式/05.抽象工厂.cpp" 
+"02-创建型模式/02-工厂模式/05.抽象工厂.cpp" 97L, 2005B written
+error list 1 of 1; 1 errors       :        noautocmd lgetexpr err_lines
