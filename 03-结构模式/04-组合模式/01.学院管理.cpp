@@ -100,7 +100,7 @@ void test01() {
 
   university->printf();
 
-  delete university;
+  delete (University *)university;
 }
 
 int main() {
