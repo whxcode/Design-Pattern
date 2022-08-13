@@ -38,6 +38,11 @@ public:
 class WebSiteFactory {
 public:
   WebSiteFactory() { webs.clear(); }
+  ~WebSiteFactory() { 
+    for(auto it : webs) {
+      delete (Web *)it.second;
+    }
+  }
 
 public:
   Website *getWeb(string type) {
@@ -84,9 +89,6 @@ int main() {
   delete s1;
   delete s2;
 
-  delete (Web *)e1;
-  delete (Web *)e2;
-  delete (Web *)n1;
 
   delete factory;
 
