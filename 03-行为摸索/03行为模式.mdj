@@ -9799,7 +9799,8 @@
 							"_parent": {
 								"$ref": "AAAAAAGELnPIb16VUew="
 							},
-							"name": "Ｓtrategy*"
+							"name": "Ｓtrategy*",
+							"type": ""
 						},
 						{
 							"_type": "UMLAttribute",
@@ -9807,7 +9808,8 @@
 							"_parent": {
 								"$ref": "AAAAAAGELnPIb16VUew="
 							},
-							"name": "StrategyA*"
+							"name": "StrategyA*",
+							"type": ""
 						}
 					],
 					"operations": [
@@ -12695,7 +12697,8 @@
 								"$ref": "AAAAAAGELn5xBn5+Y74="
 							},
 							"name": "flyBehavior",
-							"visibility": "private"
+							"visibility": "private",
+							"type": ""
 						}
 					],
 					"operations": [
@@ -13021,6 +13024,24 @@
 							}
 						}
 					]
+				}
+			]
+		},
+		{
+			"_type": "UMLModel",
+			"_id": "AAAAAAGEM6OP9TivJgA=",
+			"_parent": {
+				"$ref": "AAAAAAFF+h6SjaM2Hec="
+			},
+			"name": "状态模式",
+			"ownedElements": [
+				{
+					"_type": "UMLClassDiagram",
+					"_id": "AAAAAAGEM6OP9Tiw+X0=",
+					"_parent": {
+						"$ref": "AAAAAAGEM6OP9TivJgA="
+					},
+					"name": "ClassDiagram1"
 				}
 			]
 		}
